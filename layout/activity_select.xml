@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+xmlns:http="http://schemas.android.com/apk/res-auto"
+android:background="#B2F0F0FA"
+android:orientation="vertical"
+tools:context=".SelectActivity">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/color_change"
+        android:fontFamily="@font/mapo"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:text="선택 확인"/>
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="@font/mapo"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/color_change"
+        android:text="추천 받기"/>
+</LinearLayout>
+
+<com.example.ad2.OutlineTextView
+    xmlns:textoutline="http://schemas.android.com/apk/res/com.example.ad2"
+    android:id="@+id/movie_select"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="10dp"
+    android:textColor="#000000"
+    android:textSize="20dp"
+    android:fontFamily="@font/mapo"
+    android:background="#B2DFDFFA"
+    textoutline:textStroke="true"
+    textoutline:textStrokeColor="#000000"
+    textoutline:textStrokeWidth="1.0"/>
+
+
+
+<GridView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/gridView"
+    android:layout_marginBottom="5dp"
+    android:numColumns="3"/>
+
+</LinearLayout>

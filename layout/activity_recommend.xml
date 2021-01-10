@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B2F0F0FA"
+    tools:context=".RecommendActivity"
+    tools:showIn="@layout/activity_recommend">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/mainbtn2"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/color_change"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/mapo"
+        android:text="다시 추천 받기"
+        ></Button>
+    <Button
+        android:id="@+id/rankbtn"
+        android:layout_width="250dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@drawable/color_change"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp"
+        android:textSize="20dp"
+        android:textColor="#FFFFFF"
+        android:fontFamily="@font/mapo"
+        android:text="추천 순위 보기"
+        ></Button>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listview2"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"/>
+</LinearLayout>
